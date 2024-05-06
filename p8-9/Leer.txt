@@ -1,0 +1,11 @@
+//Para el funcionamiento
+//Crear Base de datos en sql Server con el nombre de "bdlian8_9" y ejecutar el archivo "bdlian8_9.script"
+//Proyectos-----------
+
+//WebServicesPersona -------------
+//Configurar en Web.Config
+//Linea 11 Reemplazar "Ingresar Nombre Servidor" nombre del servidor de la Base de datos ejemplo: "DESKTOP-4MFH89B\SQLEXPRESS"
+
+//AplicacionConsumoWebServices -------------
+//Configurar en Web.Config
+//Linea 11 Reemplazar "Ingresar Nombre Servidor" nombre del servidor de la Base de datos ejemplo: "DESKTOP-4MFH89B\SQLEXPRESS"
