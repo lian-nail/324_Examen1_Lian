@@ -26,6 +26,8 @@ $router->post( '/admin/agregarUs', [AdminController::class, 'agregarUs'] );
 $router->get( '/admin/editarUs', [AdminController::class, 'editarUs'] );
 $router->post( '/admin/editarUs', [AdminController::class, 'editarUs'] );
 
+$router->post( '/admin/eliminarUs', [AdminController::class, 'eliminarUs'] );
+
 //AREA Usuario
 $router->get( '/persona', [PersonaController::class, 'index'] );
 $router->get( '/persona/agregar', [PersonaController::class, 'agregar'] );
