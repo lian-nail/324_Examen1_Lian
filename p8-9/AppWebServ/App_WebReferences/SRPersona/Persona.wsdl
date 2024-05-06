@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="InsertPersona">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nombre" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="paterno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="materno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ci" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertPersonaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertPersonaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeletePersona">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeletePersonaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeletePersonaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdatePersona">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nombre" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="paterno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="materno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ci" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdatePersonaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdatePersonaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="InsertPersonaSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertPersona" />
+  </wsdl:message>
+  <wsdl:message name="InsertPersonaSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertPersonaResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeletePersonaSoapIn">
+    <wsdl:part name="parameters" element="tns:DeletePersona" />
+  </wsdl:message>
+  <wsdl:message name="DeletePersonaSoapOut">
+    <wsdl:part name="parameters" element="tns:DeletePersonaResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdatePersonaSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdatePersona" />
+  </wsdl:message>
+  <wsdl:message name="UpdatePersonaSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdatePersonaResponse" />
+  </wsdl:message>
+  <wsdl:portType name="PersonaSoap">
+    <wsdl:operation name="InsertPersona">
+      <wsdl:input message="tns:InsertPersonaSoapIn" />
+      <wsdl:output message="tns:InsertPersonaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePersona">
+      <wsdl:input message="tns:DeletePersonaSoapIn" />
+      <wsdl:output message="tns:DeletePersonaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePersona">
+      <wsdl:input message="tns:UpdatePersonaSoapIn" />
+      <wsdl:output message="tns:UpdatePersonaSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PersonaSoap" type="tns:PersonaSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InsertPersona">
+      <soap:operation soapAction="http://tempuri.org/InsertPersona" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePersona">
+      <soap:operation soapAction="http://tempuri.org/DeletePersona" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePersona">
+      <soap:operation soapAction="http://tempuri.org/UpdatePersona" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="PersonaSoap12" type="tns:PersonaSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InsertPersona">
+      <soap12:operation soapAction="http://tempuri.org/InsertPersona" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePersona">
+      <soap12:operation soapAction="http://tempuri.org/DeletePersona" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePersona">
+      <soap12:operation soapAction="http://tempuri.org/UpdatePersona" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Persona">
+    <wsdl:port name="PersonaSoap" binding="tns:PersonaSoap">
+      <soap:address location="http://localhost:56128/Persona.asmx" />
+    </wsdl:port>
+    <wsdl:port name="PersonaSoap12" binding="tns:PersonaSoap12">
+      <soap12:address location="http://localhost:56128/Persona.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
