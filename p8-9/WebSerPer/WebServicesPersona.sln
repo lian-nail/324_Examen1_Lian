@@ -1,0 +1,69 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34301.259
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebServicesPersona", ".", "{B0B3A9B4-BFAB-4A02-808A-A7E22162EBBC}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_56128"
+		Debug.AspNetCompiler.PhysicalPath = "..\WebServicesPersona\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_56128\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_56128"
+		Release.AspNetCompiler.PhysicalPath = "..\WebServicesPersona\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_56128\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "56128"
+		SlnRelativePath = "..\WebServicesPersona\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "AplicacionConsumoWebServices", "..\AplicacionConsumoWebServices\", "{B83055BD-DF2A-4C05-BF46-9C6CF1B527BB}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_57953"
+		Debug.AspNetCompiler.PhysicalPath = "..\AplicacionConsumoWebServices\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57953\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_57953"
+		Release.AspNetCompiler.PhysicalPath = "..\AplicacionConsumoWebServices\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57953\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "57953"
+		SlnRelativePath = "..\AplicacionConsumoWebServices\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+	ProjectSection(ProjectDependencies) = postProject
+		{B0B3A9B4-BFAB-4A02-808A-A7E22162EBBC} = {B0B3A9B4-BFAB-4A02-808A-A7E22162EBBC}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B0B3A9B4-BFAB-4A02-808A-A7E22162EBBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0B3A9B4-BFAB-4A02-808A-A7E22162EBBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B83055BD-DF2A-4C05-BF46-9C6CF1B527BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B83055BD-DF2A-4C05-BF46-9C6CF1B527BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F7E9A0FE-BC15-4217-AE2B-CEC12779A5F9}
+	EndGlobalSection
+EndGlobal
