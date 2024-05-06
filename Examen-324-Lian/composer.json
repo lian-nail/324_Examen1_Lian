@@ -1,0 +1,17 @@
+{
+    "name": "israel/app-salon_lian-ver2",
+    "description": "App_Salon_LianVer2",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Israel\\AppSalonLianVer2\\": "src/",
+            "MVC\\" : "./",
+            "Controllers\\" : "./controllers",
+            "Model\\" : "./models",
+            "Classes\\" : "./classes"
+        }
+    },
+    "require": {
+        "phpmailer/phpmailer": "^6.9"
+    }
+}
